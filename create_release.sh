@@ -1,7 +1,9 @@
 #! /bin/bash
 
 function writeManifest {
-	rm Manifest.txt
+	if [ -e "Manifest.txt" ]; then
+		rm Manifest.txt
+	fi
 	echo "Manifest-Version: 1.0" >> Manifest.txt
 	echo "Created-By: Alex Vasilenko (codevs)" >> Manifest.txt
 	echo "Main-Class: counter/CoinCounter" >> Manifest.txt
