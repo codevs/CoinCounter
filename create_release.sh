@@ -1,10 +1,10 @@
 #! /bin/bash
 
 function writeManifest {
-	echo "Manifest-Version: 1.0
-Created-By: Alex Vasilenko (codevs)
-Main-Class: counter/CoinCounter
-" > Manifest.txt
+	rm Manifest.txt
+	echo "Manifest-Version: 1.0" >> Manifest.txt
+	echo "Created-By: Alex Vasilenko (codevs)" >> Manifest.txt
+	echo "Main-Class: counter/CoinCounter" >> Manifest.txt
 }
 
 APP_NAME="CoinCounter"
@@ -22,4 +22,5 @@ writeManifest
 jar cfm $FILENAME Manifest.txt counter
 
 rm -rf counter
+rm Manifest.txt
 
