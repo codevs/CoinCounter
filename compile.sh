@@ -1,7 +1,11 @@
 #! /bin/bash
 
-#Working on compile
-#requires that the command "javac" work
-#needs to turn .java files to .class files
-#then turn the .class files into one .jar file
-#so yeah
+APP_NAME="CoinCounter"
+VERSION="1.0.1"
+
+mkdir -p build
+
+cd source
+javac -d ../build counter/CoinCounter.java
+
+
