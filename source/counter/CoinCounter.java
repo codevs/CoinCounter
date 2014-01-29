@@ -1,7 +1,5 @@
 package counter;
 
-//import javax.swing.JOptionPane;
-
 import counter.coins.Coins;
 import counter.gui.FileWrite;
 import counter.gui.Window;
@@ -13,12 +11,11 @@ public class CoinCounter {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Coins coins = new Coins();
-		FileWrite writer = new FileWrite("coins", coins);
+		FileWrite writer = new FileWrite(coins);
 		Buttons buttons = new Buttons();
 		Window window = new Window("Coin Counter", "v1.1.1", coins, buttons);
 		Actions actions =  new Actions(writer, window, coins);
 		window.createWindow();
-		//System.exit(0);
 	}
 
 }

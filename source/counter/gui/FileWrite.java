@@ -23,9 +23,9 @@ import javax.swing.JOptionPane;
 
 public class FileWrite {
 	private final String fileExtention = ".cdp";
-	private String fileName;
+	private String fileName = "coins";
 	private String errorFileName = "errorLog.err";
-	private final String dirName = "data";
+	private final String dirName = "CoinCounter_Data";
 	
 	
 	private File file = null;
@@ -38,9 +38,8 @@ public class FileWrite {
 	private Coins coins = null;
 	
 	
-	public FileWrite(String fileName, Coins coins){
+	public FileWrite(Coins coins){
 		this.coins = coins;
-		this.fileName = fileName;
 		file =  openFile();
 		errorFile = openErrorFile();
 		readData();
@@ -48,13 +47,15 @@ public class FileWrite {
 	}
 	
 	private File openFile(){
-		file = new File(dirName + File.separator + fileName + fileExtention);
+		String path = System.getProperty("user.home");
+		file = new File(path + File.separator + dirName + File.separator + fileName + fileExtention);
 		checkFile();
 		return file;
 	}
 	
 	private File openErrorFile(){
-		errorFile = new File(dirName + File.separator + errorFileName);
+		String path = System.getProperty("user.home");
+		errorFile = new File(path + File.separator + dirName + File.separator + errorFileName);
 		checkErrorFile();
 		return errorFile;
 	}
@@ -114,6 +115,7 @@ public class FileWrite {
 		}catch (FileNotFoundException e) {
 			writeErrorData("Data read error " + e.toString());
 		}
+		
 	}
 	
 	
