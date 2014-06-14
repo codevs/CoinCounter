@@ -1,7 +1,7 @@
 # Coin Counter #
 ### Created by Alex Vasilenko ###
 
-![Main Window](http://i.imgur.com/cdJ60bX.png)   
+![Main Window](http://imgur.com/ublEojN)   
 
 A simple java GUI application for keeping
 track of coins    
