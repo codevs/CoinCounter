@@ -176,14 +176,14 @@ public class Window{
 	private void makeTotalCoins(){
 		String ammount = "Total Coins: " + Integer.toString(coins.getTotalCoins());
 		totalCoins = new JLabel(ammount);
-		totalCoins.setSize(100, 15);
+		totalCoins.setSize(200, 15);
 		totalCoins.setLocation(50, 270);
 	}
 	
 	private void makeTotalMoney(){
 		String ammount = "Total Money: " + coins.getDollarSymbol() +  coins.getTotalValueString();
 		totalMoney = new JLabel(ammount);
-		totalMoney.setSize(150, 15);
+		totalMoney.setSize(200, 15);
 		totalMoney.setLocation(50, 290);
 	}
 	
