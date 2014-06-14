@@ -25,7 +25,7 @@ public class FileWrite {
 	private final String fileExtention = ".cdp";
 	private String fileName = "coins";
 	private String errorFileName = "errorLog.err";
-	private final String dirName = "CoinCounter_Data";
+	private final String dirName = "CoinCounter";
 	
 	
 	private File file = null;
