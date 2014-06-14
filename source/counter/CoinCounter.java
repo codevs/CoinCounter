@@ -13,7 +13,7 @@ public class CoinCounter {
 		Coins coins = new Coins();
 		FileWrite writer = new FileWrite(coins);
 		Buttons buttons = new Buttons();
-		Window window = new Window("Coin Counter", "v1.1.1", coins, buttons);
+		Window window = new Window("Coin Counter", "v1.1.2", coins, buttons);
 		Actions actions =  new Actions(writer, window, coins);
 		window.createWindow();
 	}

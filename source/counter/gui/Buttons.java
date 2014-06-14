@@ -101,15 +101,15 @@ public class Buttons{
 	
 	private void makeClearButton(){
 		clearButton = new JButton("Clear");
-		clearButton.setSize(70, 60);
-		clearButton.setLocation(630, 270);
+		clearButton.setSize(buttonWidth, 60);
+		clearButton.setLocation(600, 270);
 		clearButton.addActionListener(Actions.clearPressed());
 	}
 	
 	private void makeCoinStar(){
 		coinStar = new JButton("CoinStar");
-		coinStar.setSize(100, 60);
-		coinStar.setLocation(500, 270);
+		coinStar.setSize(buttonWidth, 60);
+		coinStar.setLocation(490, 270);
 		coinStar.addActionListener(Actions.coinStarPressed());
 	}
 

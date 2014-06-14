@@ -234,15 +234,15 @@ public class Window{
 	private void makeCreator(){
 		creator = new JLabel("By: Alex Vasilenko");
 		creator.setSize(200, 15);
-		creator.setLocation(620, 450);
+		creator.setLocation(600, 450);
 	}
 	
 	private void makeTitleLabel(){
 		Font font = new Font("sansserif", Font.BOLD, 42);
 		titleLabel = new JLabel(title);
 		titleLabel.setFont(font);
-		titleLabel.setLocation(250, 10);
-		titleLabel.setSize(300, 50);
+		titleLabel.setLocation(200, 10);
+		titleLabel.setSize(400, 50);
 	}
 	
 	public void update(){
@@ -264,3 +264,4 @@ public class Window{
 		dollarCoinValue.setText("Value: " + coins.getDollarSymbol() + String.format("%.2f", coins.getTotalValueOfDollarCoins()));
 	}
 }//END OF CLASS
+
