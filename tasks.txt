@@ -1,0 +1,9 @@
+[TO DO] Change to a responsive GUI system. Possibly with tiles.
+Commit: TBD, Date of Completion: TBD
+
+[TO DO] Add network abilities to save coins on server
+Commit: TBD, Date of Completion: TBD
+
+[TO DO] Simplify the release method
+Commit: TBD, Date of Completion: TBD
+
