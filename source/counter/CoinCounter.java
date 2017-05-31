@@ -1,3 +1,6 @@
+// CoinCounter.java
+// Aleksandr Vasilenko
+
 package counter;
 
 import counter.coins.Coins;

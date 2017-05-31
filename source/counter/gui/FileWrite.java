@@ -1,9 +1,5 @@
-/*FileWriter.java
- * 
- * By: Alex Vasilenko
- * 
- * Free to use
- * */
+// FileWriter.java
+// Aleksandr Vasilenko
 
 
 package counter.gui;

@@ -1,3 +1,6 @@
+// Actions.java
+// Aleksandr Vasilenko
+
 package counter.gui;
 
 import counter.coins.Coins;

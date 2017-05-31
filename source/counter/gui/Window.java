@@ -1,3 +1,6 @@
+// Window.java
+// Alekandr Vasilenko
+
 package counter.gui;
 
 import java.awt.Color;

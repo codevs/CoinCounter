@@ -1,5 +1,5 @@
 # Coin Counter #
-### Created by Alex Vasilenko ###
+### Created by Aleksandr Vasilenko ###
 
 
 A simple java GUI application for keeping

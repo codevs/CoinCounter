@@ -1,3 +1,6 @@
+// Coins.java
+// Aleksandr Vasilenko
+
 package counter.coins;
 
 import java.text.DecimalFormat;
